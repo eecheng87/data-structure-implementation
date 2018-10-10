@@ -81,6 +81,8 @@ Node *read(){
 		tmp->u.entry.col = col;
 		tmp->u.entry.row = row;
 		tmp->u.entry.value = value;
+		//link row
+		last->right = tmp;
 		last = tmp;
 		//link col list
 		//next is store tmp which is last in each col
